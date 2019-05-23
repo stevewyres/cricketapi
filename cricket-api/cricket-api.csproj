@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PlayCricket.DataReader\PlayCricket.DataReader.csproj" />
+    <ProjectReference Include="..\PlayCricket.Facade\PlayCricket.Facade.csproj" />
   </ItemGroup>
 
 </Project>

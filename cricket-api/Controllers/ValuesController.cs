@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PlayCricket.DataReader;
+using PlayCricket.Facade;
 
 namespace cricket_api.Controllers
 {
@@ -14,8 +15,8 @@ namespace cricket_api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> GetPlayerTypes()
         {
-            PlayCricketReader pr = new PlayCricketReader();
-            return pr.PlayerTypes().ToList();
+            PlayCricketFacade pcFacade = new PlayCricketFacade();
+            return pcFacade.PlayerTypes().ToList();
         }
 
         // POST api/values

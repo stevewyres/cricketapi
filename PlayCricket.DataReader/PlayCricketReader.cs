@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace PlayCricket.DataReader
 {
-    public class PlayCricketReader : PlayCricketReaderBase
+    public class PlayCricketReader : PlayCricketReaderBase, IPlayCricketReader
     {
         public PlayCricketReader()
            : base()
