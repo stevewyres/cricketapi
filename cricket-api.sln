@@ -11,6 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.DataReader", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.Facade", "PlayCricket.Facade\PlayCricket.Facade.csproj", "{7F63AEFF-EEC0-4AA0-B6D3-B9C147C1472A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCricket.Models", "PlayCricket.Models\PlayCricket.Models.csproj", "{17473871-184F-4483-949D-BF63C5A72AD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7375EAB9-D77B-4935-B25C-A626768CBE27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCricket.Mappings", "PlayCricket.Mappings\PlayCricket.Mappings.csproj", "{AD312B8D-7BA8-4B13-8895-E87E661CE98B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCricket.Mappings.Tests", "PlayCricket.Mappings.Tests\PlayCricket.Mappings.Tests.csproj", "{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +41,29 @@ Global
 		{7F63AEFF-EEC0-4AA0-B6D3-B9C147C1472A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F63AEFF-EEC0-4AA0-B6D3-B9C147C1472A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F63AEFF-EEC0-4AA0-B6D3-B9C147C1472A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17473871-184F-4483-949D-BF63C5A72AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17473871-184F-4483-949D-BF63C5A72AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17473871-184F-4483-949D-BF63C5A72AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17473871-184F-4483-949D-BF63C5A72AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD312B8D-7BA8-4B13-8895-E87E661CE98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD312B8D-7BA8-4B13-8895-E87E661CE98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD312B8D-7BA8-4B13-8895-E87E661CE98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD312B8D-7BA8-4B13-8895-E87E661CE98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{722CCBC7-0189-437F-8F19-897A8DF82D88} = {7375EAB9-D77B-4935-B25C-A626768CBE27}
+		{37B62EB0-805D-463A-96FB-4E592D04DFBD} = {7375EAB9-D77B-4935-B25C-A626768CBE27}
+		{7F63AEFF-EEC0-4AA0-B6D3-B9C147C1472A} = {7375EAB9-D77B-4935-B25C-A626768CBE27}
+		{17473871-184F-4483-949D-BF63C5A72AD2} = {7375EAB9-D77B-4935-B25C-A626768CBE27}
+		{AD312B8D-7BA8-4B13-8895-E87E661CE98B} = {7375EAB9-D77B-4935-B25C-A626768CBE27}
+		{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9} = {7375EAB9-D77B-4935-B25C-A626768CBE27}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6185E437-491E-4775-BD2E-777C5B0EFE73}
