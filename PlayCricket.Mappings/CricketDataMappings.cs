@@ -34,7 +34,7 @@ namespace PlayCricket.Mappings
             }
         }
 
-        public static PlayerType ToData(this PlayerTypeModel playerTypeModel)
+        public static PlayerType ToDatabaseModel(this PlayerTypeModel playerTypeModel)
         {
             EnsureInitialised();
             return Mapper.Map<PlayerTypeModel, PlayerType>(playerTypeModel);
@@ -44,6 +44,18 @@ namespace PlayCricket.Mappings
         {
             EnsureInitialised();
             return Mapper.Map<IEnumerable<PlayerTypeModel>, IEnumerable<PlayerType>>(types);
+        }
+
+        public static PlayerTypeModel FromDatabaseModel(this PlayerType playerType)
+        {
+            EnsureInitialised();
+            return Mapper.Map<PlayerType, PlayerTypeModel > (playerType);
+        }
+
+        public static IEnumerable<PlayerTypeModel> FromDatabaseModel(this IEnumerable<PlayerType> types)
+        {
+            EnsureInitialised();
+            return Mapper.Map<IEnumerable<PlayerType>, IEnumerable<PlayerTypeModel>>(types);
         }
     }
 }

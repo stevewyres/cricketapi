@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayCricket.Data.Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,9 +18,9 @@ namespace PlayCricket.DataReader
             _playCricketReader = playCricketReader;
         }
 
-        public PlayCricketReaderFactory()
+        public PlayCricketReaderFactory(PlayCricketContext context)
         {
-            _playCricketReader = new PlayCricketReader();
+            _playCricketReader = new PlayCricketReader(context);
         }
     }
 }

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PlayCricket.DataReader\PlayCricket.DataReader.csproj" />
+    <ProjectReference Include="..\PlayCricket.Mappings\PlayCricket.Mappings.csproj" />
+    <ProjectReference Include="..\PlayCricket.Models\PlayCricket.Models.csproj" />
   </ItemGroup>
 
 </Project>

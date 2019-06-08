@@ -5,7 +5,6 @@ namespace Tests
 {
     public class CricketMappnngsTest
     {
-
         [Test]
         public void EnsureMappingConfigurationInitialized()
         {

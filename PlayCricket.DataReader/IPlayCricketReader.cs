@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayCricket.Data.Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,6 @@ namespace PlayCricket.DataReader
 {
     public interface IPlayCricketReader
     {
-        IEnumerable<string> PlayerTypes();
+        IEnumerable<PlayerType> PlayerTypes();
     }
 }

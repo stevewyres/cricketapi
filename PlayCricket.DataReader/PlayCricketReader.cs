@@ -8,18 +8,20 @@ namespace PlayCricket.DataReader
 {
     public class PlayCricketReader : PlayCricketReaderBase, IPlayCricketReader
     {
-        public PlayCricketReader()
+        private PlayCricketContext playCricketContext { get; set; }
+        public PlayCricketReader(PlayCricketContext context)
            : base()
         {
+            playCricketContext = context;
         }
 
-        public IEnumerable<string> PlayerTypes()
+        public IEnumerable<PlayerType> PlayerTypes()
         {
-            using (var context = new PlayCricketContext())
+            using (var context = playCricketContext)
             {
                 // context.Configuration.ProxyCreationEnabled = false;
                 // context.Configuration.LazyLoadingEnabled = false;
-                return context.PlayerType.Where(x => x.Id > 0).Select(x => x.Description).ToList();
+                return context.PlayerType.Where(x => x.Id > 0).ToList();
             }
         }
     }
