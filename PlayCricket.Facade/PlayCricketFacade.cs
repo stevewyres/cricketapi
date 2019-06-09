@@ -23,5 +23,10 @@ namespace PlayCricket.Facade
         }
 
         public IEnumerable<PlayerTypeModel> PlayerTypes() => PlayCricketRepository.PlayerTypes().FromDatabaseModel();
+
+        public IEnumerable<BowlingTypeModel> BowlingTypes()
+        {
+            return PlayCricketRepository.BowlingTypes().FromDatabaseModel();
+        }
     }
 }

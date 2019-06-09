@@ -25,6 +25,9 @@ namespace PlayCricket.Mappings
                             cfg.CreateMap<PlayerType, PlayerTypeModel>();
                             cfg.CreateMap<PlayerTypeModel, PlayerType>()
                                 .ForMember(dest => dest.Player, opt => opt.Ignore());
+                            cfg.CreateMap<BowlingType, BowlingTypeModel>();
+                            cfg.CreateMap<BowlingTypeModel, BowlingType>()
+                                .ForMember(dest => dest.Player, opt => opt.Ignore());
                         });
 
                         Mapper = MapperConfig.CreateMapper();
@@ -56,6 +59,30 @@ namespace PlayCricket.Mappings
         {
             EnsureInitialised();
             return Mapper.Map<IEnumerable<PlayerType>, IEnumerable<PlayerTypeModel>>(types);
+        }
+
+        public static BowlingType ToDatabaseModel(this BowlingTypeModel BowlingTypeModel)
+        {
+            EnsureInitialised();
+            return Mapper.Map<BowlingTypeModel, BowlingType>(BowlingTypeModel);
+        }
+
+        public static IEnumerable<BowlingType> ToData(this IEnumerable<BowlingTypeModel> types)
+        {
+            EnsureInitialised();
+            return Mapper.Map<IEnumerable<BowlingTypeModel>, IEnumerable<BowlingType>>(types);
+        }
+
+        public static BowlingTypeModel FromDatabaseModel(this BowlingType BowlingType)
+        {
+            EnsureInitialised();
+            return Mapper.Map<BowlingType, BowlingTypeModel>(BowlingType);
+        }
+
+        public static IEnumerable<BowlingTypeModel> FromDatabaseModel(this IEnumerable<BowlingType> types)
+        {
+            EnsureInitialised();
+            return Mapper.Map<IEnumerable<BowlingType>, IEnumerable<BowlingTypeModel>>(types);
         }
     }
 }

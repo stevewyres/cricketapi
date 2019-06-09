@@ -8,5 +8,6 @@ namespace PlayCricket.DataRepository
     public interface IPlayCricketRepository
     {
         IEnumerable<PlayerType> PlayerTypes();
+        IEnumerable<BowlingType> BowlingTypes();
     }
 }

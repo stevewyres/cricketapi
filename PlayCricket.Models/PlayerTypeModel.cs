@@ -1,10 +1,6 @@
-﻿using System;
-
-namespace PlayCricket.Models
+﻿namespace PlayCricket.Models
 {
-    public class PlayerTypeModel
+    public class PlayerTypeModel : ModelTypeBase
     {
-        public int Id { get; set; }
-        public string Description { get; set; }
     }
 }

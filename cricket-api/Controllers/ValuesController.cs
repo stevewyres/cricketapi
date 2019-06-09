@@ -19,10 +19,18 @@ namespace cricket_api.Controllers
             PlayCricketContext = context;
         }
         [HttpGet]
+        [HttpGet("GetPlayerTypes")]
         public ActionResult<IEnumerable<PlayerTypeModel>> GetPlayerTypes()
         {
             PlayCricketFacade pcFacade = new PlayCricketFacade(this.PlayCricketContext);
             return pcFacade.PlayerTypes().ToList();
+        }
+
+        [HttpGet("GetBowlingTypes")]
+        public ActionResult<IEnumerable<BowlingTypeModel>> GetBowlingTypes()
+        {
+            PlayCricketFacade pcFacade = new PlayCricketFacade(this.PlayCricketContext);
+            return pcFacade.BowlingTypes().ToList();
         }
 
         // POST api/values

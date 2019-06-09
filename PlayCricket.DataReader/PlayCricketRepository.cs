@@ -21,8 +21,13 @@ namespace PlayCricket.DataRepository
             {
                 // context.Configuration.ProxyCreationEnabled = false;
                 // context.Configuration.LazyLoadingEnabled = false;
-                return context.PlayerType.Where(x => x.Id > 0).ToList();
+                return context.PlayerType.ToList();
             }
+        }
+
+        public IEnumerable<BowlingType> BowlingTypes()
+        {
+            return PlayCricketContext.BowlingType;
         }
     }
 }

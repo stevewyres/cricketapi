@@ -9,5 +9,6 @@ namespace PlayCricket.Facade.interfaces
         DataRepository.IPlayCricketRepositoryFactory PlayCricketReaderFactory { get; }
 
         IEnumerable<PlayerTypeModel> PlayerTypes();
+        IEnumerable<BowlingTypeModel> BowlingTypes();
     }
 }

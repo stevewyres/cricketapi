@@ -14,9 +14,8 @@ namespace PlayCricket.Data.Model
 
         public int Id { get; set; }
         [Required]
-        [Column("BowlingType")]
         [StringLength(50)]
-        public string BowlingType1 { get; set; }
+        public string Description { get; set; }
 
         [InverseProperty("BowlingTypeNavigation")]
         public virtual ICollection<Player> Player { get; set; }
