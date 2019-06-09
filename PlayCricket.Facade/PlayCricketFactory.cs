@@ -1,5 +1,4 @@
-﻿using PlayCricket.DataReader;
-using PlayCricket.Facade.interfaces;
+﻿using PlayCricket.Facade.interfaces;
 
 namespace PlayCricket.Facade
 {

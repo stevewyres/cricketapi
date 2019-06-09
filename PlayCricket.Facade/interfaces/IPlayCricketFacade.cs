@@ -6,6 +6,8 @@ namespace PlayCricket.Facade.interfaces
 {
     public interface IPlayCricketFacade
     {
+        DataRepository.IPlayCricketRepositoryFactory PlayCricketReaderFactory { get; }
+
         IEnumerable<PlayerTypeModel> PlayerTypes();
     }
 }

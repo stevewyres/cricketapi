@@ -1,23 +1,23 @@
 ﻿using PlayCricket.Data.Model;
-using PlayCricket.DataReaderBase;
+using PlayCricket.DataRepositoryBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PlayCricket.DataReader
+namespace PlayCricket.DataRepository
 {
-    public class PlayCricketReader : PlayCricketReaderBase, IPlayCricketReader
+    public class PlayCricketRepository : PlayCricketRepositoryBase, IPlayCricketRepository
     {
-        private PlayCricketContext playCricketContext { get; set; }
-        public PlayCricketReader(PlayCricketContext context)
+        private PlayCricketContext PlayCricketContext { get; set; }
+        public PlayCricketRepository(PlayCricketContext context)
            : base()
         {
-            playCricketContext = context;
+            PlayCricketContext = context;
         }
 
         public IEnumerable<PlayerType> PlayerTypes()
         {
-            using (var context = playCricketContext)
+            using (var context = PlayCricketContext)
             {
                 // context.Configuration.ProxyCreationEnabled = false;
                 // context.Configuration.LazyLoadingEnabled = false;

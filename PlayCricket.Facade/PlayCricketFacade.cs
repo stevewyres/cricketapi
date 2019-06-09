@@ -1,5 +1,5 @@
 ﻿using PlayCricket.Data.Model;
-using PlayCricket.DataReader;
+using PlayCricket.DataRepository;
 using PlayCricket.Facade.interfaces;
 using PlayCricket.Mappings;
 using PlayCricket.Models;
@@ -9,19 +9,19 @@ namespace PlayCricket.Facade
 {
     public class PlayCricketFacade : IPlayCricketFacade
     {
-        private IPlayCricketReader _playCricketReader;
-        public IPlayCricketReaderFactory PlayCricketReaderFactory { get; private set; }
-        public PlayCricketFacade(IPlayCricketReaderFactory cricketReaderFactory)
+        private IPlayCricketRepository _playCricketRepository;
+        public IPlayCricketRepositoryFactory PlayCricketReaderFactory { get; private set; }
+        public PlayCricketFacade(IPlayCricketRepositoryFactory cricketReaderFactory)
         {
             PlayCricketReaderFactory = cricketReaderFactory;
         }
-        public PlayCricketFacade(PlayCricketContext context) : this(new PlayCricketReaderFactory(context)) {}
+        public PlayCricketFacade(PlayCricketContext context) : this(new PlayCricketRepositoryFactory(context)) {}
         
-        public IPlayCricketReader PlayCricketReader
+        public IPlayCricketRepository PlayCricketRepository
         {
-            get { return _playCricketReader ?? (_playCricketReader = PlayCricketReaderFactory.GetPlayCricketReader()); }
+            get { return _playCricketRepository ?? (_playCricketRepository = PlayCricketReaderFactory.GetPlayCricketRepository()); }
         }
 
-        public IEnumerable<PlayerTypeModel> PlayerTypes() => PlayCricketReader.PlayerTypes().FromDatabaseModel();
+        public IEnumerable<PlayerTypeModel> PlayerTypes() => PlayCricketRepository.PlayerTypes().FromDatabaseModel();
     }
 }

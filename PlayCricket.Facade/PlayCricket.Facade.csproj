@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PlayCricket.DataReader\PlayCricket.DataReader.csproj" />
+    <ProjectReference Include="..\PlayCricket.DataReader\PlayCricket.DataRepository.csproj" />
     <ProjectReference Include="..\PlayCricket.Mappings\PlayCricket.Mappings.csproj" />
     <ProjectReference Include="..\PlayCricket.Models\PlayCricket.Models.csproj" />
   </ItemGroup>

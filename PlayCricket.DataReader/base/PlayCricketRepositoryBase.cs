@@ -1,14 +1,14 @@
 ﻿using PlayCricket.Data.Model;
 
-namespace PlayCricket.DataReaderBase
+namespace PlayCricket.DataRepositoryBase
 {
-    public class PlayCricketReaderBase
+    public class PlayCricketRepositoryBase
     {
         protected PlayCricketContext Context { get; private set; }
-        protected PlayCricketReaderBase() : this(new PlayCricketContext())
+        protected PlayCricketRepositoryBase() : this(new PlayCricketContext())
         {
         }
-        protected PlayCricketReaderBase(PlayCricketContext context)
+        protected PlayCricketRepositoryBase(PlayCricketContext context)
         {
             Context = context;
             //Context.Configuration.ProxyCreationEnabled = false;

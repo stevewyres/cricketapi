@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PlayCricket.Data.Model;
-using PlayCricket.DataReader;
 using PlayCricket.Facade;
 using PlayCricket.Models;
 

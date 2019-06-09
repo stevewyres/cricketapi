@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PlayCricket.DataReader
+namespace PlayCricket.DataRepository
 {
-    public interface IPlayCricketReader
+    public interface IPlayCricketRepository
     {
         IEnumerable<PlayerType> PlayerTypes();
     }

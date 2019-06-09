@@ -7,17 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cricket-api", "cricket-api\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.Data", "PlayCricket.Data\PlayCricket.Data.csproj", "{722CCBC7-0189-437F-8F19-897A8DF82D88}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.DataReader", "PlayCricket.DataReader\PlayCricket.DataReader.csproj", "{37B62EB0-805D-463A-96FB-4E592D04DFBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.DataRepository", "PlayCricket.DataReader\PlayCricket.DataRepository.csproj", "{37B62EB0-805D-463A-96FB-4E592D04DFBD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.Facade", "PlayCricket.Facade\PlayCricket.Facade.csproj", "{7F63AEFF-EEC0-4AA0-B6D3-B9C147C1472A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCricket.Models", "PlayCricket.Models\PlayCricket.Models.csproj", "{17473871-184F-4483-949D-BF63C5A72AD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.Models", "PlayCricket.Models\PlayCricket.Models.csproj", "{17473871-184F-4483-949D-BF63C5A72AD2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7375EAB9-D77B-4935-B25C-A626768CBE27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCricket.Mappings", "PlayCricket.Mappings\PlayCricket.Mappings.csproj", "{AD312B8D-7BA8-4B13-8895-E87E661CE98B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.Mappings", "PlayCricket.Mappings\PlayCricket.Mappings.csproj", "{AD312B8D-7BA8-4B13-8895-E87E661CE98B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCricket.Mappings.Tests", "PlayCricket.Mappings.Tests\PlayCricket.Mappings.Tests.csproj", "{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayCricket.Mappings.Tests", "PlayCricket.Mappings.Tests\PlayCricket.Mappings.Tests.csproj", "{4E023A86-A2C0-49BC-8B93-BBAB8B2C04C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
