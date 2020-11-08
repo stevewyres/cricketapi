@@ -20,9 +20,9 @@ namespace PlayCricket.Data.Model
 
         [ForeignKey("BowlingType")]
         [InverseProperty("Player")]
-        public virtual BowlingType BowlingTypeNavigation { get; set; }
+        public virtual BowlingTypes BowlingTypeNavigation { get; set; }
         [ForeignKey("PlayerType")]
         [InverseProperty("Player")]
-        public virtual PlayerType PlayerTypeNavigation { get; set; }
+        public virtual PlayerTypes PlayerTypeNavigation { get; set; }
     }
 }
